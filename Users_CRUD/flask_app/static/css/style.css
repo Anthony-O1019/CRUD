@@ -1,0 +1,36 @@
+* {
+    margin: auto;
+    padding: 0px;
+}
+h1{
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px;
+    width: 600px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+.container{
+    width: 600px;
+    display: flexbox;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.form{
+    display: flexbox;
+    justify-content: center;
+    margin: 5px;
+}
+
+table{
+    display: flex;
+}
+
+input{
+    margin-top: 5px;
+}

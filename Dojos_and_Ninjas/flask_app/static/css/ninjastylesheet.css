@@ -1,0 +1,41 @@
+*{
+    padding: auto;
+    margin: 0;
+}
+
+/* Below is going to be the classes for the Add Ninja HTML */
+
+.ninjacontainer{
+    color: rgb(0, 0, 0);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.ninjaform{
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.dojoname{
+    margin-left: 20px;
+}
+
+.fname{
+    margin-left: 15px;
+}
+
+.lname{
+    margin-left: 16px;
+}
+
+.age{
+    margin-left: 59px;
+}
+
+.submit{
+    margin-left: 95px;
+}

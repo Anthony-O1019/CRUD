@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos and Ninjas</title>
+</head>
+<body>
+    <h1>Here are the ninjas for {{alldojo.name}} Ninjas!</h1>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+        </tr>
+        <tbody>
+            {% for ninja in dojos.ninjas %}
+            <tr>
+                <td>{{ninja.first_name}}</td>
+                <td>{{ninja.last_name}}</td>
+                <td>{{ninja.age}}</td>
+                <td><a href="/editninja">Edit</a></td>
+                <td><a href="/deleteninja/{{ninja.id}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/dojo" class="addninja">Home</a>
+</body>
+</html>

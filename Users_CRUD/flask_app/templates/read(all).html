@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All  of the Users</title>
+
+    <style>
+
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+            background-color: darkgrey;
+            width: 600px;
+        }
+        table{
+            margin: 10px;
+        }
+
+        a{
+            background-color: Red;
+            color: black;
+            padding: 2px;
+        }
+        
+
+    </style>
+    
+</head>
+<body> 
+    <h1>Here are all of the Users!</h1>
+        <table>
+            <thead>
+                <tr class="tr">
+                    <th>First Name: </th>
+                    <th>Last Name: </th>
+                    <th>Email: </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+            <tr>
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <!-- I am not sure how to space out the fields, I do not have time right now to figure it out. I should come back later to find out how. -->
+
+    <a href='/'>Add another user</a>
+</body>
+</html>

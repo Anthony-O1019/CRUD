@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: auto;
+}
+/* Below are going to be the classes for the dojo.html */
+.container{
+    padding: 5px;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newdojo{
+    width: 600px;
+    height: 100px;
+}
+
+.newdojoname{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.createbutton{
+    background-color: grey;
+    color:aliceblue;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-left: 58px;
+}
+
+.alldojo{
+    background-color: beige;
+    width: 600px;
+}
+
+.dojolist{
+    height: auto;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
